@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import StatsSection from './components/StatsSection';
-import ExplorationSection from './components/ExplorationSection';
+import InteractiveGlobeSection from './components/InteractiveGlobeSection';
 
 export default function App() {
   return (
@@ -16,9 +16,9 @@ export default function App() {
           <nav className="hidden md:flex items-center gap-6 text-sm text-zinc-300">
             <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#stats" className="hover:text-white transition-colors">Stats</a>
-            <a href="#exploration" className="hover:text-white transition-colors">Exploration</a>
+            <a href="#globe" className="hover:text-white transition-colors">Globe</a>
           </nav>
-          <a href="#exploration" className="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 text-xs font-medium transition-colors">
+          <a href="#globe" className="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 text-xs font-medium transition-colors">
             Explore
           </a>
         </div>
@@ -34,8 +34,8 @@ export default function App() {
         <section id="stats">
           <StatsSection />
         </section>
-        <section id="exploration">
-          <ExplorationSection />
+        <section id="globe">
+          <InteractiveGlobeSection />
         </section>
       </main>
 
@@ -45,7 +45,7 @@ export default function App() {
           <div className="flex items-center gap-4">
             <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#stats" className="hover:text-white transition-colors">Stats</a>
-            <a href="#exploration" className="hover:text-white transition-colors">Exploration</a>
+            <a href="#globe" className="hover:text-white transition-colors">Globe</a>
           </div>
         </div>
       </footer>
