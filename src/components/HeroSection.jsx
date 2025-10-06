@@ -1,12 +1,12 @@
 import React from 'react';
-import Spline from '@splinetool/react-spline';
 import { motion } from 'framer-motion';
+import RotatingGlobe from './RotatingGlobe';
 
 export default function HeroSection() {
   return (
     <div className="relative min-h-[90vh] w-full overflow-hidden">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/TQzTfOv9igPMLRJd/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <RotatingGlobe />
       </div>
 
       <div className="absolute inset-0 pointer-events-none">
@@ -28,7 +28,7 @@ export default function HeroSection() {
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Our Home in the Cosmos</span>
             </h1>
             <p className="mt-6 text-zinc-300 max-w-xl">
-              A unique, living world where oceans, atmosphere, and life intertwine. Explore our planet\'s story, its vital statistics, and our journey to understand and protect it.
+              A unique, living world where oceans, atmosphere, and life intertwine. Explore our planet's story, its vital statistics, and our journey to understand and protect it.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#about" className="inline-flex items-center justify-center rounded-full bg-white text-black px-5 py-2.5 text-sm font-semibold hover:bg-zinc-100 transition-colors">
